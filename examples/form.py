@@ -17,13 +17,7 @@ JSON: object
 
 
 class document:
-    def createElement(self, tagName: str): ...
-
     def getElementById(self, id: str): ...
-
-
-class console:
-    def log(self, *message: str) -> None: ...
 
 
 @dataclass
@@ -57,14 +51,14 @@ def message_component(message: Message):
 
 @app.route('/')
 # @util.timer
-def training():
+def index():
     @js
     def main():
         async def button_clicked():
             message = document.getElementById('message')
-            console.log(await send_message({
+            await send_message({
                 'content': message.value
-            }))
+            })
             message.value = ''
             window.location.reload()
 

@@ -20,14 +20,7 @@ JSON: object
 
 
 class document:
-    def createElement(self, tagName: str): ...
-
     def getElementById(self, id: str): ...
-
-
-class console:
-    def log(self, *message: str) -> None: ...
-
 
 class RequestData(typing.TypedDict):
     content: str
@@ -55,8 +48,7 @@ def generate_qr():
 
 
 @app.route('/')
-# @util.timer
-def training():
+def index():
     @js
     def main():
         async def generate():
