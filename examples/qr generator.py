@@ -49,7 +49,7 @@ def generate_qr():
     image = qr.make_image(fill_color='#3da0b4', back_color="white")
 
     buffered = BytesIO()
-    image.save(buffered, format="JPEG")
+    image.save(buffered, format="PNG")
     img_str = base64.b64encode(buffered.getvalue())
     return b'data:image/png;base64,' + img_str
 

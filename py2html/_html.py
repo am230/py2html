@@ -33,9 +33,6 @@ class HTMLElement(t.Generic[P], py2xml.Element[P]):
         if 'className' in props:
             attributes['class'] = props['className']
         return super().__call__(*args, **props, **attributes) # type: ignore
-    
-    def format(self, value):
-        return html.escape(str(value))
 
     def render(self) -> str:
         children_text = self.children_text
