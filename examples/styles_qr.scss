@@ -1,0 +1,60 @@
+$black: rgb(0, 0, 0);
+$white: #fff;
+$accent: #3da0b4; // ff6464
+$font-family_1: cursive;
+body {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    background-color: $white;
+    color: $black;
+    border: none;
+    outline: none;
+    box-shadow: 0px 1px 0px 0px #000;
+    font-size: 16px;
+    width: 617px;
+    font-weight: bold;
+    transform: translateY(1px);
+    &:focus {
+        box-shadow: 0px 1px 0px 0px $accent;
+    }
+    &::placeholder {
+        color: #aaa;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: $black;
+    border: none;
+    font-family: $font-family_1;
+    font-size: 20px;
+    color: $white;
+    width: 30px;
+    &:hover {
+        background-color: $accent;
+    }
+}
+
+.message_container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.message {
+    margin: 50px;
+    margin-left: 0px;
+    max-width: 596px;
+    >.username {
+        color: $accent;
+    }
+}
