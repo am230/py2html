@@ -3,8 +3,8 @@ from setuptools import setup, find_packages, find_namespace_packages
 with open('README.rst', mode='r', encoding='utf-8') as f:
     long_description = f.read()
 
-author = 'pytohtml'
-name = 'py2html'
+author = 'am230'
+name = 'pytohtml'
 py_modules = [name]
 
 setup(
