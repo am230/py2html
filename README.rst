@@ -16,6 +16,14 @@ Installation
 Example
 -------
 
+.. image:: https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/597237/436215da-f815-4473-687e-7fc21b04bab3.gif
+
+Source Code: https://github.com/am230/py2html/blob/master/examples/qr%20generator.py
+
+.. image:: https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/597237/40173212-8f2e-0e4e-c924-3140d6ff1722.gif
+
+Source Code: https://github.com/am230/py2html/blob/master/examples/form.py
+
 .. code:: python
 
     from py2html.elements import html, head, body, meta, title, h1
