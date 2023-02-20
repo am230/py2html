@@ -9,7 +9,7 @@ py_modules = [name]
 
 setup(
     name=name,
-    version="1.0.3",
+    version="1.0.4",
     keywords=("html", "pythonic"),
     description="Write HTML with Pythonic Code",
     long_description=long_description,
@@ -17,7 +17,7 @@ setup(
     license="MIT Licence",
     long_description_content_type='text/x-rst',
     packages=find_packages(),
-    url=f"https://github.com/{author}/{name}",
+    url=f"https://github.com/{author}/py2html",
     author=author,
     author_email="am.230@outlook.jp",
     py_modules=py_modules,
