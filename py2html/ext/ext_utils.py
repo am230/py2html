@@ -1,7 +1,7 @@
 import time
 import typing as _t
 
-from strbuilder import BaseBuilder
+from strbuilder import Builder
 from flask import Flask
 
 T = _t.TypeVar('T')
@@ -19,7 +19,7 @@ T = _t.TypeVar('T', bound=_t.Callable)
 def api(app: Flask, rule: str, json: bool=True, **options: _t.Any) -> str:
     def decorator(func: T) -> T:
         app.route(rule=rule, **options)(func)
-        return BaseBuilder(f'''const {func.__name__} = async (data = {{}}) => {{return (await fetch(`{rule}`, {{
+        return Builder(f'''const {func.__name__} = async (data = {{}}) => {{return (await fetch(`{rule}`, {{
                     method: 'POST',
                     mode: 'cors',
                     cache: 'no-cache',

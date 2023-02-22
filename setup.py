@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages, find_namespace_packages
+from setuptools import setup, find_packages
 
 with open('README.rst', mode='r', encoding='utf-8') as f:
     long_description = f.read()
@@ -9,7 +9,7 @@ py_modules = [name]
 
 setup(
     name=name,
-    version="1.0.4",
+    version="1.0.6",
     keywords=("html", "pythonic"),
     description="Write HTML with Pythonic Code",
     long_description=long_description,
