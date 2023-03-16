@@ -9,7 +9,7 @@ py_modules = [name]
 
 setup(
     name=name,
-    version="1.2.4",
+    version="1.2.5",
     keywords=("html", "pythonic"),
     description="Write HTML with Pythonic Code",
     long_description=long_description,
