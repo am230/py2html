@@ -13,7 +13,7 @@ setup(
     keywords=("html", "pythonic"),
     description="Write HTML with Pythonic Code",
     long_description=long_description,
-    requires=["strbuilder", "Flask", "libsass"],
+    requires=["strbuilder", "Flask", "libsass", "py2js"],
     license="MIT Licence",
     long_description_content_type='text/x-rst',
     packages=find_packages(),
